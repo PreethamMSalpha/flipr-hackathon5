@@ -1,0 +1,130 @@
+.dashboard {
+  margin: 40px auto;
+  width: 80%;
+  background-color: rgb(250, 250, 250);
+  padding: 20px;
+
+  .dropdown {
+    select {
+      padding: 5px;
+      width: 100px;
+    }
+  }
+
+  h1,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: unset;
+  }
+
+  .overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+    }
+  }
+
+  .col2 {
+    @media screen and (max-width: 750px) {
+      margin: 10px 0;
+    }
+  }
+
+  .col1 {
+    .headingGap {
+      margin: 5px 0;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      opacity: 0.8;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+      color: rgb(54, 190, 118);
+    }
+
+    h6 {
+      opacity: 0.6;
+    }
+  }
+
+  .col2 {
+    .range {
+      margin: 10px 0px 40px 0;
+
+      h3,
+      h5 {
+        margin: 5px 0;
+      }
+
+      .light {
+        opacity: 0.8;
+      }
+
+      .lighter {
+        opacity: 0.6;
+      }
+
+      .hnlValues {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .slider {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        svg {
+          margin: 5px;
+        }
+      }
+    }
+  }
+
+  .price {
+    margin-top: 40px;
+    h2 {
+      opacity: 0.8;
+      margin: unset;
+    }
+
+    .contents {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+
+      .column1,
+      .column2 {
+        flex: 0.47;
+
+        .priceList {
+          margin: 15px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .name {
+            opacity: 0.6;
+          }
+
+          .value {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+  }
+}

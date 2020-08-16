@@ -1,0 +1,41 @@
+.chart {
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  background-color: #016098;
+  padding: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+  h1 {
+    margin-top: 40px;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(233, 162, 32);
+    text-underline-position: under;
+  }
+
+  .dropdown {
+    // display: flex;
+    position: absolute;
+    justify-content: start;
+    top: 0px;
+    left: 20px;
+    margin: 25px;
+
+    select {
+      padding: 5px;
+    }
+  }
+
+  .graph {
+    background-color: white;
+    margin: auto;
+    justify-content: center;
+    z-index: 1;
+    color: unset;
+    width: 95%;
+  }
+}
